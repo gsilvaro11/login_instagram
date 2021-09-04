@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: #fafafa;}
+
+/* Área conteudo */
+.container{
+    margin: 2.5em auto;
+    width: 65%;    
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-height: 600px;
+    margin: 0 auto;
+}
+.item1,.item2{width: 45%;}
+.item1{flex-grow: 1;}
+.item2{flex-grow: 1; padding: 15px;}
+
+.area_login{   
+    width: 360px; 
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #FFFF;
+    padding-top: 10px;  
+    margin-bottom: 10px;      
+}
+
+.area_login2{   
+    width: 360px; 
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #FFFF;
+    padding: 20px 0;  
+    margin-bottom: 10px;      
+}
+
+.area_login3{          
+    padding: 20px 0;  
+    margin-bottom: 10px;      
+}
+
+.area_login input{
+    width: 70%;
+    margin-top: 6px;
+    padding: 9px 0 7px 8px;
+}
+.area_login button{
+    width: 73%; 
+    margin: 15px; 
+    padding: 7px 0 7px 8px; 
+    background-color: rgb(135, 206, 253); color: #FFFF;
+}
+
+.area_logo{margin: 10px;}
+
+@media(max-width: 1000px){
+    .item1{
+        display: none;
+    }
+    .item2{
+        flex-grow: 2;
+    }
+}
